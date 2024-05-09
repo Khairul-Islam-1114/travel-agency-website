@@ -1,0 +1,69 @@
+.explore-place{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: beige;
+}
+
+.explore-place h2{
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.place-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    overflow-x: auto;
+    text-align: center;
+    height: 100%;
+    width: 85vw;
+    padding: 0 5%;
+}
+
+.place-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+.place-wrapper .place-image{
+    width: 25vw;
+    border-radius: 10px 10px 0 0;
+}
+
+.place{
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    height: 50vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.explore-place .slide-icons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px);
+    bottom: 230px;
+    padding: 0 20px;
+}
+
+.slide-icon{
+    cursor: pointer;
+    height: auto;
+    width: 40px;
+}
+
+.disabled {
+    cursor: not-allowed;
+}

@@ -22,7 +22,7 @@
     text-align: center;
     font-weight: bold;
     word-spacing: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-size: 40px;
 }
 
@@ -30,13 +30,14 @@
     text-align: center;
     text-transform: uppercase;
     word-spacing: 5px;
-    margin-bottom:15px;
+    margin-bottom:25px;
     font-size: 25px;
 
 }
 
 .home-content h2 span{
     font-weight: bolder;
+    margin-bottom: 15px;
 }
 
 .home-content h3 {
