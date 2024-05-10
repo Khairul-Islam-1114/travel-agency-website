@@ -3,13 +3,22 @@ import './Destination.css';
 import { popular_destination } from './Destination';
 import slide_previous from '../../assets/img/slider-previous.svg';
 import slide_next from '../../assets/img/slider-next.svg';
+import phone from '../../assets/img/phone.gif';
+
 
 const Destination = () => {
 
     const destinationWrapperRef = useRef(null);
     const [showPrevious, setShowPrevious] = useState(false);
     const [showNext, setShowNext] = useState(true);
+    const [showModal, setShowModal] = useState(false);
+
     const placeCardWidth = 27;
+
+    const toggleModal = () => {
+        setShowModal(!showModal);
+    };
+    
 
     const handleScroll = () => {
         const destinationWrapper = destinationWrapperRef.current;
@@ -59,7 +68,7 @@ const Destination = () => {
             <div className="destination-wrapper" ref={destinationWrapperRef} onScroll={handleScroll}>
                 {popular_destination.map((trip, index) => {
                     return (
-                        <div className="destination-card" key={index}>
+                        <div className="destination-card" key={index} onClick={toggleModal}>
 
                             <div className="first-container">
 
@@ -95,8 +104,25 @@ const Destination = () => {
                     onClick={showNext ? handleNextClick : null}
                 />
             </div>
+            {showModal && <Modal toggleModal={toggleModal} />}
+
         </section>
     )
 }
 
 export default Destination;
+
+const Modal = ({ toggleModal }) => {
+    return (
+        <div className="modal show">
+            <div className="modal-content">
+                <span className="close" onClick={toggleModal}>&times;</span>
+                <img src={phone} alt="" className='phone-icon'/>
+                <p>Call us to book now.</p>
+                <a href="tel:+880 9614 500500">+880 9614 500500</a>
+                <p>Thank you</p>
+                <button onClick={toggleModal}>Close</button>
+            </div>
+        </div>
+    );
+};

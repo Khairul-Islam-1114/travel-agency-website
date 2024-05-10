@@ -1,0 +1,57 @@
+.plan-to-pay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    background-color: darkturquoise;
+    width: 100vw;
+    padding: 0 5% 0 5%;
+}
+
+
+
+.plan-icon{
+    height: 90px;
+
+}
+
+.booking-icon{
+    height: 90px;
+
+}
+
+.details-icon{
+    height: 80px;
+
+}
+
+.pay-icon{
+    height: 80px;
+
+}
+
+.arrow{
+    width: 30px;
+}
+
+.plan, .booking, .details, .pay{
+    width: 20vw;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.plan h3, .booking h3, .details h3, .pay h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.plan-icon:hover, .booking-icon:hover, .details-icon:hover, .pay-icon:hover{
+    transform: scale(1.1);
+}
+
