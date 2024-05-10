@@ -13,6 +13,8 @@ import PlanToPay from './components/PlanToPay/PlanToPay.jsx';
 import slider1 from './assets/img/ads-slider1.png';
 import slider2 from './assets/img/ads-slider2.png';
 import Carousel from './components/Carousel/Carousel.jsx';
+import Airlines from './components/HorizontalScroll/Airlines.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 
 const App = () => {
@@ -34,15 +36,17 @@ const App = () => {
       <div className='app'>
         <Navbar />
         <Routes>
-          <Route path='/' Component={Home} />
+          <Route path='/' element={<Home />} />
         </Routes>
         <Explore />
         <Destination />
         <PlanToPay />
         <Carousel items={sliderItems}/>
+        <Airlines />
+        <Footer />
       </div>
     </Router>
   )
 }
 
-export default App
+export default App;

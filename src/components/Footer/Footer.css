@@ -1,0 +1,157 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding:25px 10%;
+    margin: auto;
+    background-image: radial-gradient( circle 811px at 17.3% 40.2%,  rgba(16,12,37,0.91) 33.4%, rgba(14,1,81,0.85) 90% );
+    color: aliceblue;
+}
+
+footer h4{
+    font-weight: bold;
+}
+
+
+.upper-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.column-1{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.column-1-brand{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* margin-bottom: -25px; */
+}
+
+.column-1-brand h4{
+    font-weight: bold;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.partner{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+}
+
+.partner h4, .social-icons h4{
+    font-weight: bold;
+}
+
+.column-2{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+
+}
+
+.column-2 .sub-col-1{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.column-2 .sub-col-1 a{
+    color: aliceblue;
+}
+
+.column-2 .sub-col-2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.column-2 .sub-col-2 a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: aliceblue;
+
+}
+
+.column-2 .sub-col-2 div{
+    display: flex;
+}
+
+.column-2 .sub-col-2 div address{
+    margin-bottom: -20px;
+}
+
+
+
+.company-logo{
+    width: 100px;
+}
+
+.iata-logo{
+    width: 50px;
+    background-color: white;
+}
+
+.partner .amadeus-logo{
+    width: 100px;
+}
+
+.social-icons img{
+    width: 25px;
+   
+}
+
+.phone-icon, .mail-icon, .location-icon {
+    width: 20px;
+}
+
+.payment-icons img {
+    width: 35px;
+    background-color: white;
+}
+
+.column-2 .sub-col-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: -75px;
+}
+
+.payment-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.bottom-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
