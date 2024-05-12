@@ -10,7 +10,24 @@ import contact from '../../assets/img/contact-info.svg';
 
 
 
-const Navbar = () => {
+const Navbar = ({setIsHome, setIsAbout, setIsContact}) => {
+
+const toAboutPage = () => {
+    setIsHome(false);
+    setIsAbout(true);
+}
+
+const backToHomePage = () => {
+    setIsAbout(false);
+    setIsHome(true);
+}
+
+const toContactPage = () => {
+    setIsHome(false);
+    setIsAbout(false);
+    setIsContact(true);
+}
+
     return (
         <nav>
             <div className='brand'>
@@ -20,15 +37,15 @@ const Navbar = () => {
 
             <ul>
                 <li>
-                    <Link to='/' className='nav-items'> <img src={home} alt="" /> <span>H O M E</span> </Link>
+                    <Link to='/' className='nav-items' onClick={backToHomePage}> <img src={home} alt="" /> <span>H O M E</span> </Link>
                 </li>
 
                 <li>
-                    <Link to='/about' className='nav-items'> <img src={info} alt="" /> <span>A B O U T</span> </Link>
+                    <Link to='/about' className='nav-items' onClick={toAboutPage}> <img src={info} alt=""/> <span>A B O U T</span> </Link>
                 </li>
 
                 <li>
-                    <Link to='/contact' className='nav-items'> <img src={contact} alt="" /> <span>C O N T A C T</span> </Link>
+                    <Link to='/contact' className='nav-items' onClick={toContactPage}> <img src={contact} alt="" /> <span>C O N T A C T</span> </Link>
                 </li>
             </ul>
 

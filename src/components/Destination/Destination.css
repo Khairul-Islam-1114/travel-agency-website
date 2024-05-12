@@ -1,15 +1,17 @@
-.destination{
+.destination {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 80vh;
-    background-color: azure;
+    background-color: rgb(248, 247, 247);
+ 
+
     position: relative;
 }
 
-.destination h2{
+.destination h2 {
     text-transform: uppercase;
     margin-top: 100px;
     font-weight: bold;
@@ -18,7 +20,7 @@
     word-spacing: 5px;
 }
 
-.destination-wrapper{
+.destination-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,12 +32,13 @@
     padding: 0 5%;
 }
 
-img.trip-from, img.trip-to{
+img.trip-from,
+img.trip-to {
     width: 30px;
 }
 
-.destination-card{
-    background-color:white;
+.destination-card {
+    background-color: white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     height: 40vh;
     width: 25vw !important;
@@ -45,55 +48,55 @@ img.trip-from, img.trip-to{
     justify-content: space-around;
     align-items: center;
     /* gap: 20px; */
-    padding:15px 50px;
-    border: 3px solid gold;
+    padding: 15px 50px;
+    border: 2px solid grey;
     cursor: pointer;
 }
 
-.destination-card:hover{
+.destination-card:hover {
     transform: scale(1.20);
 }
 
 
-.first-container{
+.first-container {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
 
 }
 
-.destination-logo{
+.destination-logo {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-hr.divider{
+hr.divider {
     width: 100%;
 }
 
-.destination-place{
+.destination-place {
     display: flex;
     flex-direction: column;
     gap: 32px;
     font-weight: bold;
 }
 
-.destination-card .trip-price{
+.destination-card .trip-price {
     width: 100% !important;
 }
 
-.destination-card .trip-price p{
+.destination-card .trip-price p {
     font-weight: 500;
 }
 
-.destination-card .trip-price p:last-of-type{
-    color:deepskyblue;
+.destination-card .trip-price p:last-of-type {
+    color: deepskyblue;
     font-size: 20px;
     margin-top: 5px;
 }
 
-.destination .slide-icons{
+.destination .slide-icons {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -104,14 +107,14 @@ hr.divider{
 
 }
 
-.slide-icon{
+.slide-icon {
     cursor: pointer;
     height: auto;
     width: 40px;
     border-radius: 50%;
 }
 
-.slide-icon:hover{
+.slide-icon:hover {
     transform: scale(1.25) linear;
 }
 
@@ -160,15 +163,15 @@ hr.divider{
 }
 
 
-.modal-content{
+.modal-content {
     text-align: center;
     line-height: 2rem;
 }
 
-.modal-content .phone-icon{
+.modal-content .phone-icon {
     width: 60px;
 }
 
-.modal-content button{
+.modal-content button {
     background-color: rgb(210, 8, 8);
 }

@@ -17,6 +17,7 @@ const Home = () => {
         <h2><span>Dhaka Popular Travel</span> <br /> is Here For You to Bring Those Memory Into Your Life</h2> 
         <h3>By Offering Unbeatable Flight Ticket Priceing And Top-Notch Customer Care</h3>
       </div>
+      
     </section>
   )
 }

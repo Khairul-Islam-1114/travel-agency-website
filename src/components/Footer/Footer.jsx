@@ -35,7 +35,7 @@ const Footer = () => {
 
                 <div className="column-1">
                     <div className="column-1-brand">
-                        <img src={logo} alt="company-logo" className='company-logo'/>
+                        <img src={logo} alt="company-logo" className='company-logo' />
                         <h4>Dhaka Popular Travel</h4>
                     </div>
 
@@ -43,17 +43,19 @@ const Footer = () => {
                         Dhaka Popular Travel, in the heart of Dhaka centre since 2021, provides first rate personalized services to all our clients and after years of steadfast service, we are still committed to exceeding your expectations!
                     </p>
 
-                    <div className="social-icons">
-                        <h4>FOLLOW US</h4>
-                        <img src={facebook} alt="" className="facebook" />
-                        <img src={messenger} alt="" className="messenger" />
-                        <img src={whatsapp} alt="" className="whatsapp" />
-                    </div>
-
-                    <div className='partner'>
-                            <h4>TECHNOLOGY PARTNER</h4>
-                            <img src={amadeus} alt="amadeus-logo" className='amadeus-logo'/>
+                    <div className="social-partner">
+                        <div className="social-icons">
+                            <h4>FOLLOW US</h4>
+                            <img src={facebook} alt="" className="facebook" />
+                            <img src={messenger} alt="" className="messenger" />
+                            <img src={whatsapp} alt="" className="whatsapp" />
                         </div>
+
+                        <div className='partner'>
+                            <h4>TECHNOLOGY PARTNER</h4>
+                            <img src={amadeus} alt="amadeus-logo" className='amadeus-logo' />
+                        </div>
+                    </div>
 
                 </div>
 
@@ -69,17 +71,17 @@ const Footer = () => {
                     <div className="sub-col-2">
                         <h4>CONTACT US</h4>
                         <a href="tel:+880 9614 500500" className='phone'>
-                            <img src={phone} alt="phone-icon" className='phone-icon'/>
+                            <img src={phone} alt="phone-icon" className='phone-icon' />
                             <span>+880 9614 500500</span>
                         </a>
 
                         <a href="mailto:info@populartravel.com.bd" className='mail'>
-                            <img src={mail} alt="mail-icon" className='mail-icon'/>
+                            <img src={mail} alt="email-icon" className='email-icon' />
                             <span>info@populartravel.com.bd</span>
                         </a>
 
                         <div>
-                            <img src={location} alt="location-icon" className='location-icon'/>
+                            <img src={location} alt="location-icon" className='location-icon' />
                             <address>Ka #85/3, 1st Floor Shahjadpur, Gulshan, Dhaka</address>
                         </div>
                     </div>
@@ -99,7 +101,7 @@ const Footer = () => {
             <hr className="divider" />
 
             <div className="bottom-row">
-                <img src={iata} alt="iata-logo" className='iata-logo'/>
+                <img src={iata} alt="iata-logo" className='iata-logo' />
                 <p>&copy; 2024 Dhaka Popular Travel</p>
             </div>
 

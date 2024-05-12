@@ -54,10 +54,10 @@ ul li .nav-items span{
 }
 
 ul li .nav-items span:hover{
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     border-bottom: 2px solid #66FF00;
     font-weight: bold;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 button{

@@ -38,6 +38,10 @@
 .home-content h2 span{
     font-weight: bolder;
     margin-bottom: 15px;
+    /* text-decoration: underline; */
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 
 .home-content h3 {
@@ -45,9 +49,9 @@
     text-transform: uppercase;
     word-spacing: 5px;
     font-weight:600;
-    background-color: chartreuse;
+    background-color: gold;
     width: fit-content;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     padding:5px 10px;
 }

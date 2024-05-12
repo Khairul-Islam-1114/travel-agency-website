@@ -1,40 +1,46 @@
-.plan-to-pay{
+.plan-to-pay {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50vh;
-    background-color: darkturquoise;
+    /* background-color: darkturquoise; */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
     width: 100vw;
     padding: 0 5% 0 5%;
 }
 
 
 
-.plan-icon{
+.plan-icon {
     height: 90px;
 
 }
 
-.booking-icon{
+.booking-icon {
     height: 90px;
 
 }
 
-.details-icon{
+.details-icon {
     height: 80px;
 
 }
 
-.pay-icon{
+.pay-icon {
     height: 80px;
 
 }
 
-.arrow{
+.arrow {
     width: 30px;
 }
 
-.plan, .booking, .details, .pay{
+.plan,
+.booking,
+.details,
+.pay {
     width: 20vw;
     height: 80%;
     display: flex;
@@ -44,14 +50,25 @@
     text-align: center;
     gap: 10px;
     color: rgba(0, 0, 0, 0.8);
+    border: 1px solid ghostwhite;
+    border-radius: 5px;
+    background-color: #64c4fb;
+
+    /* background-color: rgb(6, 228, 231); */
+
 }
 
-.plan h3, .booking h3, .details h3, .pay h3{
+.plan h3,
+.booking h3,
+.details h3,
+.pay h3 {
     margin-bottom: 10px;
     font-weight: 500;
 }
 
-.plan-icon:hover, .booking-icon:hover, .details-icon:hover, .pay-icon:hover{
+.plan-icon:hover,
+.booking-icon:hover,
+.details-icon:hover,
+.pay-icon:hover {
     transform: scale(1.1);
 }
-

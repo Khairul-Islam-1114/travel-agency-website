@@ -4,6 +4,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100vw;
+    height: fit-content;
     padding:25px 10%;
     margin: auto;
     background-image: radial-gradient( circle 811px at 17.3% 40.2%,  rgba(16,12,37,0.91) 33.4%, rgba(14,1,81,0.85) 90% );
@@ -123,8 +124,8 @@ footer h4{
    
 }
 
-.phone-icon, .mail-icon, .location-icon {
-    width: 20px;
+.phone-icon, .email-icon, .location-icon {
+    width: 25px;
 }
 
 .payment-icons img {
@@ -154,4 +155,64 @@ footer h4{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+
+
+@media (max-width: 768px){
+
+    footer h4{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .upper-row{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .upper-row .column-1, .upper-row .column-2{
+        width: 100%;
+    }
+
+    .column-1-brand{
+        margin-bottom: -20px;
+        
+    }
+
+    .column-1 p{
+        text-align: justify;
+
+    }
+
+    .social-partner{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
+
+    .social-partner h4{
+        font-size: 14px;
+    }
+
+    .social-icons img{
+        width: 20px;
+       
+    }
+
+    .partner .amadeus-logo{
+        width: 75px;
+    }
+}
+
+@media (max-width: 500px){
+    .social-partner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
+
+    .payment-icons img {
+        width: 20px;
+    }
 }
